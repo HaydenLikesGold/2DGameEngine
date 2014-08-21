@@ -9,7 +9,21 @@
 /* Begin PBXBuildFile section */
 		4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9019A58FEF006BF089 /* ResourcePath.mm */; };
 		4FF00D9419A58FEF006BF089 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9319A58FEF006BF089 /* main.cpp */; };
+		4FF00DA519A59179006BF089 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DA319A59179006BF089 /* Application.cpp */; };
+		4FF00DAD19A594B1006BF089 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF00DAC19A594B1006BF089 /* XCTest.framework */; };
+		4FF00DB319A594B1006BF089 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FF00DB119A594B1006BF089 /* InfoPlist.strings */; };
+		4FF00DBD19A594C3006BF089 /* ApplicationShould.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DBC19A594C3006BF089 /* ApplicationShould.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FF00DB719A594B1006BF089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FF00D8219A58FEF006BF089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FF00D8A19A58FEF006BF089;
+			remoteInfo = "SFML-GameEngine";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-GameEngine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -17,6 +31,14 @@
 		4FF00D9019A58FEF006BF089 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		4FF00D9219A58FEF006BF089 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		4FF00D9319A58FEF006BF089 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4FF00DA319A59179006BF089 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		4FF00DA419A59179006BF089 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		4FF00DAA19A594B1006BF089 /* SFML-GameEngine Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SFML-GameEngine Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF00DAC19A594B1006BF089 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4FF00DB019A594B1006BF089 /* SFML-GameEngine Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-GameEngine Tests-Info.plist"; sourceTree = "<group>"; };
+		4FF00DB219A594B1006BF089 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FF00DB619A594B1006BF089 /* SFML-GameEngine Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFML-GameEngine Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4FF00DBC19A594C3006BF089 /* ApplicationShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationShould.m; path = ../ApplicationShould.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +49,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4FF00DA719A594B1006BF089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF00DAD19A594B1006BF089 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -34,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				4FF00D8D19A58FEF006BF089 /* SFML-GameEngine */,
+				4FF00DAE19A594B1006BF089 /* SFML-GameEngine Tests */,
+				4FF00DAB19A594B1006BF089 /* Frameworks */,
 				4FF00D8C19A58FEF006BF089 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */,
+				4FF00DAA19A594B1006BF089 /* SFML-GameEngine Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +85,8 @@
 				4FF00D9319A58FEF006BF089 /* main.cpp */,
 				4FF00D9519A58FEF006BF089 /* Resources */,
 				4FF00D8E19A58FEF006BF089 /* Supporting Files */,
+				4FF00DA319A59179006BF089 /* Application.cpp */,
+				4FF00DA419A59179006BF089 /* Application.hpp */,
 			);
 			path = "SFML-GameEngine";
 			sourceTree = "<group>";
@@ -71,6 +106,33 @@
 			children = (
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		4FF00DAB19A594B1006BF089 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF00DAC19A594B1006BF089 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FF00DAE19A594B1006BF089 /* SFML-GameEngine Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4FF00DBC19A594C3006BF089 /* ApplicationShould.m */,
+				4FF00DAF19A594B1006BF089 /* Supporting Files */,
+			);
+			path = "SFML-GameEngine Tests";
+			sourceTree = "<group>";
+		};
+		4FF00DAF19A594B1006BF089 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FF00DB019A594B1006BF089 /* SFML-GameEngine Tests-Info.plist */,
+				4FF00DB119A594B1006BF089 /* InfoPlist.strings */,
+				4FF00DB619A594B1006BF089 /* SFML-GameEngine Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +156,24 @@
 			productReference = 4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4FF00DA919A594B1006BF089 /* SFML-GameEngine Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FF00DB919A594B1006BF089 /* Build configuration list for PBXNativeTarget "SFML-GameEngine Tests" */;
+			buildPhases = (
+				4FF00DA619A594B1006BF089 /* Sources */,
+				4FF00DA719A594B1006BF089 /* Frameworks */,
+				4FF00DA819A594B1006BF089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FF00DB819A594B1006BF089 /* PBXTargetDependency */,
+			);
+			name = "SFML-GameEngine Tests";
+			productName = "SFML-GameEngine Tests";
+			productReference = 4FF00DAA19A594B1006BF089 /* SFML-GameEngine Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +182,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = HaydenGoldstien;
+				TargetAttributes = {
+					4FF00DA919A594B1006BF089 = {
+						TestTargetID = 4FF00D8A19A58FEF006BF089;
+					};
+				};
 			};
 			buildConfigurationList = 4FF00D8519A58FEF006BF089 /* Build configuration list for PBXProject "SFML-GameEngine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -116,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				4FF00D8A19A58FEF006BF089 /* SFML-GameEngine */,
+				4FF00DA919A594B1006BF089 /* SFML-GameEngine Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +211,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF00DA819A594B1006BF089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF00DB319A594B1006BF089 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +247,38 @@
 			files = (
 				4FF00D9419A58FEF006BF089 /* main.cpp in Sources */,
 				4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */,
+				4FF00DA519A59179006BF089 /* Application.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF00DA619A594B1006BF089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF00DBD19A594C3006BF089 /* ApplicationShould.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FF00DB819A594B1006BF089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FF00D8A19A58FEF006BF089 /* SFML-GameEngine */;
+			targetProxy = 4FF00DB719A594B1006BF089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FF00DB119A594B1006BF089 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FF00DB219A594B1006BF089 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4FF00D9E19A58FEF006BF089 /* Debug */ = {
@@ -279,6 +401,88 @@
 			};
 			name = Release;
 		};
+		4FF00DBA19A594B1006BF089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SFML-GameEngine.app/Contents/MacOS/SFML-GameEngine";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFML-GameEngine Tests/SFML-GameEngine Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "SFML-GameEngine Tests/SFML-GameEngine Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4FF00DBB19A594B1006BF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SFML-GameEngine.app/Contents/MacOS/SFML-GameEngine";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SFML-GameEngine Tests/SFML-GameEngine Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "SFML-GameEngine Tests/SFML-GameEngine Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -296,6 +500,14 @@
 			buildConfigurations = (
 				4FF00DA119A58FEF006BF089 /* Debug */,
 				4FF00DA219A58FEF006BF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4FF00DB919A594B1006BF089 /* Build configuration list for PBXNativeTarget "SFML-GameEngine Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FF00DBA19A594B1006BF089 /* Debug */,
+				4FF00DBB19A594B1006BF089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

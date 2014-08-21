@@ -28,6 +28,21 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4FF00DA919A594B1006BF089"
+               BuildableName = "SFML-GameEngine Tests.xctest"
+               BlueprintName = "SFML-GameEngine Tests"
+               ReferencedContainer = "container:SFML-GameEngine.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SFML_GameEngine_Tests">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
