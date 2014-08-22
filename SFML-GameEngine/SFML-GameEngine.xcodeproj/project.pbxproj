@@ -11,8 +11,6 @@
 		4FF00D9419A58FEF006BF089 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9319A58FEF006BF089 /* main.cpp */; };
 		4FF00DA519A59179006BF089 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DA319A59179006BF089 /* Application.cpp */; };
 		4FF00DAD19A594B1006BF089 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF00DAC19A594B1006BF089 /* XCTest.framework */; };
-		4FF00DB319A594B1006BF089 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FF00DB119A594B1006BF089 /* InfoPlist.strings */; };
-		4FF00DBD19A594C3006BF089 /* ApplicationShould.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DBC19A594C3006BF089 /* ApplicationShould.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +33,6 @@
 		4FF00DA419A59179006BF089 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		4FF00DAA19A594B1006BF089 /* SFML-GameEngine Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SFML-GameEngine Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF00DAC19A594B1006BF089 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4FF00DB019A594B1006BF089 /* SFML-GameEngine Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-GameEngine Tests-Info.plist"; sourceTree = "<group>"; };
-		4FF00DB219A594B1006BF089 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4FF00DB619A594B1006BF089 /* SFML-GameEngine Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFML-GameEngine Tests-Prefix.pch"; sourceTree = "<group>"; };
-		4FF00DBC19A594C3006BF089 /* ApplicationShould.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationShould.m; path = ../ApplicationShould.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				4FF00D8D19A58FEF006BF089 /* SFML-GameEngine */,
-				4FF00DAE19A594B1006BF089 /* SFML-GameEngine Tests */,
 				4FF00DAB19A594B1006BF089 /* Frameworks */,
 				4FF00D8C19A58FEF006BF089 /* Products */,
 			);
@@ -114,25 +107,6 @@
 				4FF00DAC19A594B1006BF089 /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4FF00DAE19A594B1006BF089 /* SFML-GameEngine Tests */ = {
-			isa = PBXGroup;
-			children = (
-				4FF00DBC19A594C3006BF089 /* ApplicationShould.m */,
-				4FF00DAF19A594B1006BF089 /* Supporting Files */,
-			);
-			path = "SFML-GameEngine Tests";
-			sourceTree = "<group>";
-		};
-		4FF00DAF19A594B1006BF089 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4FF00DB019A594B1006BF089 /* SFML-GameEngine Tests-Info.plist */,
-				4FF00DB119A594B1006BF089 /* InfoPlist.strings */,
-				4FF00DB619A594B1006BF089 /* SFML-GameEngine Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF00DB319A594B1006BF089 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF00DBD19A594C3006BF089 /* ApplicationShould.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,17 +240,6 @@
 			targetProxy = 4FF00DB719A594B1006BF089 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4FF00DB119A594B1006BF089 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FF00DB219A594B1006BF089 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4FF00D9E19A58FEF006BF089 /* Debug */ = {
@@ -502,6 +463,7 @@
 				4FF00DA219A58FEF006BF089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FF00DB919A594B1006BF089 /* Build configuration list for PBXNativeTarget "SFML-GameEngine Tests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +472,7 @@
 				4FF00DBB19A594B1006BF089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
