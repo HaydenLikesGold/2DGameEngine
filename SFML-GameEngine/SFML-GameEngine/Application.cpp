@@ -18,6 +18,13 @@ void Application::launch()
 {
     while (mWindow.isOpen())
     {
+        sf::Event event;
+        while (mWindow.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                mWindow.close();
+        }
+        
         update();
         render();
     }
