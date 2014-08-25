@@ -6,9 +6,13 @@
 
 int main(int, char const**)
 {
+    int width = 1024;
+    int height = 720;
+    std::string windowName = "SFML - GameEngine";
+    
     try
     {
-        Application app;
+        Application app(width, height, windowName);
         app.launch();
     } catch (std::exception& ex)
     {

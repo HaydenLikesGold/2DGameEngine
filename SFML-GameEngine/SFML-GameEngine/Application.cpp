@@ -8,10 +8,15 @@
 
 #include "Application.hpp"
 
-Application::Application():
-mWindow(sf::VideoMode(1024,768), "SFML-GameEngine", sf::Style::Close)
+Application::Application(int width, int height, std::string windowName):
+mWindow(sf::VideoMode(width, height), windowName, sf::Style::Close)
 {
     mWindow.setFramerateLimit(60);
+    
+}
+
+Application::~Application(){
+    
 }
 
 void Application::launch()

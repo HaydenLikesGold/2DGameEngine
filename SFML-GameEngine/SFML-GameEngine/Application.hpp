@@ -15,7 +15,8 @@ class Application
 {
 
 public:
-            Application();
+            Application(int width, int height, std::string windowName);
+            ~Application();
     void    launch();
     
 private:
