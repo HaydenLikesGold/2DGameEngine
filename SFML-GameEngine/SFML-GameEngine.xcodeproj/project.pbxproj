@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F54D79119AD006400633A4E /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F54D78F19AD006400633A4E /* ResourceManager.cpp */; };
 		4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9019A58FEF006BF089 /* ResourcePath.mm */; };
 		4FF00D9419A58FEF006BF089 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9319A58FEF006BF089 /* main.cpp */; };
 		4FF00DA519A59179006BF089 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DA319A59179006BF089 /* Application.cpp */; };
@@ -24,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F54D78F19AD006400633A4E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		4F54D79019AD006400633A4E /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
 		4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-GameEngine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF00D8F19A58FEF006BF089 /* SFML-GameEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-GameEngine-Info.plist"; sourceTree = "<group>"; };
 		4FF00D9019A58FEF006BF089 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -54,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F54D79219AD006E00633A4E /* Asset Management */ = {
+			isa = PBXGroup;
+			children = (
+				4F54D78F19AD006400633A4E /* ResourceManager.cpp */,
+				4F54D79019AD006400633A4E /* ResourceManager.hpp */,
+			);
+			name = "Asset Management";
+			sourceTree = "<group>";
+		};
 		4FF00D8119A58FEF006BF089 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 				4FF00D8E19A58FEF006BF089 /* Supporting Files */,
 				4FF00DA319A59179006BF089 /* Application.cpp */,
 				4FF00DA419A59179006BF089 /* Application.hpp */,
+				4F54D79219AD006E00633A4E /* Asset Management */,
 			);
 			path = "SFML-GameEngine";
 			sourceTree = "<group>";
@@ -218,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F54D79119AD006400633A4E /* ResourceManager.cpp in Sources */,
 				4FF00D9419A58FEF006BF089 /* main.cpp in Sources */,
 				4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */,
 				4FF00DA519A59179006BF089 /* Application.cpp in Sources */,
