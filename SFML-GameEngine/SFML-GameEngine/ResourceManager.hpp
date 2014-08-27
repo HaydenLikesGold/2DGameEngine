@@ -16,11 +16,11 @@ template <typename Resource, typename Identifier>
 class ResourceManager
 {
 public:
-    void        load(Identifier id, const std::string& filenmae);
-    Resource&   get(Identifier id);
+    void                load(Identifier id, const std::string& filenmae);
+    const Resource&     get(Identifier id);
     
 private:
-    void insertResource(Identifier id, std::unique_ptr<Resource> resource);
+    void                insertResource(Identifier id, std::unique_ptr<Resource> resource);
     std::map<Identifier, std::unique_ptr<Resource>> mResourceMap;
 };
 
