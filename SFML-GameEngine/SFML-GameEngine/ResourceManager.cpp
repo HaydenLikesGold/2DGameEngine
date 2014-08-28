@@ -9,11 +9,14 @@
 #include "ResourceManager.hpp"
 
 template <typename Resource, typename Identifier>
-void ResourceManager<Resource, Identifier>::load(Identifier id, const std::string &filenmae)
+void ResourceManager<Resource, Identifier>::load(Identifier id, const std::string &filename)
 {
     std::unique_ptr<Resource> resource(new Resource());
     
-    //TO-DO: Load resource from load resource
+    if (!resource->loadFromFile(filename))
+    {
+        throw std::runtime_error("ResourceManager::load - failed to load " + filename);
+    }
     insertResource(id, std::move(resource));
 }
 
