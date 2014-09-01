@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F54D79119AD006400633A4E /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F54D78F19AD006400633A4E /* ResourceManager.cpp */; };
-		4F950D9F19AF871A0065D472 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F950D9D19AF871A0065D472 /* State.cpp */; };
-		4F950DA219AF87740065D472 /* StateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F950DA019AF87740065D472 /* StateManager.cpp */; };
 		4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9019A58FEF006BF089 /* ResourcePath.mm */; };
 		4FF00D9419A58FEF006BF089 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9319A58FEF006BF089 /* main.cpp */; };
 		4FF00DA519A59179006BF089 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DA319A59179006BF089 /* Application.cpp */; };
@@ -29,10 +27,6 @@
 /* Begin PBXFileReference section */
 		4F54D78F19AD006400633A4E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
 		4F54D79019AD006400633A4E /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
-		4F950D9D19AF871A0065D472 /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
-		4F950D9E19AF871A0065D472 /* State.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
-		4F950DA019AF87740065D472 /* StateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateManager.cpp; sourceTree = "<group>"; };
-		4F950DA119AF87740065D472 /* StateManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StateManager.hpp; sourceTree = "<group>"; };
 		4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-GameEngine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF00D8F19A58FEF006BF089 /* SFML-GameEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-GameEngine-Info.plist"; sourceTree = "<group>"; };
 		4FF00D9019A58FEF006BF089 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -75,10 +69,6 @@
 		4F950D9919AF86880065D472 /* States */ = {
 			isa = PBXGroup;
 			children = (
-				4F950D9D19AF871A0065D472 /* State.cpp */,
-				4F950D9E19AF871A0065D472 /* State.hpp */,
-				4F950DA019AF87740065D472 /* StateManager.cpp */,
-				4F950DA119AF87740065D472 /* StateManager.hpp */,
 			);
 			name = States;
 			sourceTree = "<group>";
@@ -251,8 +241,6 @@
 			files = (
 				4F54D79119AD006400633A4E /* ResourceManager.cpp in Sources */,
 				4FF00D9419A58FEF006BF089 /* main.cpp in Sources */,
-				4F950D9F19AF871A0065D472 /* State.cpp in Sources */,
-				4F950DA219AF87740065D472 /* StateManager.cpp in Sources */,
 				4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */,
 				4FF00DA519A59179006BF089 /* Application.cpp in Sources */,
 			);
