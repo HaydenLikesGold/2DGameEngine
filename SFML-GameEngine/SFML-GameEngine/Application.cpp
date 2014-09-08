@@ -42,6 +42,6 @@ void Application::update()
 
 void Application::render()
 {
-    //mWindow.clear();
-    //mWindow.display();
+    mWindow.clear();
+    mWindow.display();
 }
