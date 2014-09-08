@@ -20,9 +20,10 @@ public:
     void    launch();
     
 private:
-    void    update();
+    void    update(sf::Time deltaTime);
     void    render();
     
+    static const sf::Time   TimePerFrame;
     sf::RenderWindow    mWindow;
 };
 

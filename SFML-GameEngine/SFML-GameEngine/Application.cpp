@@ -8,8 +8,10 @@
 
 #include "Application.hpp"
 
-Application::Application(int width, int height, std::string windowName):
-mWindow(sf::VideoMode(width, height), windowName, sf::Style::Close)
+const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
+
+Application::Application(int width, int height, std::string windowName)
+:mWindow(sf::VideoMode(width, height), windowName, sf::Style::Close)
 {
     mWindow.setFramerateLimit(60);
     
@@ -21,21 +23,32 @@ Application::~Application(){
 
 void Application::launch()
 {
+    sf::Clock clock;
+    sf::Time timeSinceLastUpdate = sf::Time::Zero;
+    
     while (mWindow.isOpen())
     {
-        sf::Event event;
-        while (mWindow.pollEvent(event))
+        sf::Time deltaTime = clock.restart();
+        timeSinceLastUpdate += deltaTime;
+        while (timeSinceLastUpdate > TimePerFrame)
         {
-            if (event.type == sf::Event::Closed)
-                mWindow.close();
+            timeSinceLastUpdate -= TimePerFrame;
+            
+            //ProcessInput()
+            sf::Event event;
+            while (mWindow.pollEvent(event))
+            {
+                if (event.type == sf::Event::Closed)
+                    mWindow.close();
+            }
+            
+            update(TimePerFrame);
         }
-        
-        update();
         render();
     }
 }
 
-void Application::update()
+void Application::update(sf::Time deltaTime)
 {
     
 }
