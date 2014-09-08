@@ -23,6 +23,8 @@ private:
     void    update(sf::Time deltaTime);
     void    render();
     
+    void    processInput();
+    
     static const sf::Time   TimePerFrame;
     sf::RenderWindow    mWindow;
 };

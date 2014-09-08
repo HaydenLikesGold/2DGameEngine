@@ -34,14 +34,7 @@ void Application::launch()
         {
             timeSinceLastUpdate -= TimePerFrame;
             
-            //ProcessInput()
-            sf::Event event;
-            while (mWindow.pollEvent(event))
-            {
-                if (event.type == sf::Event::Closed)
-                    mWindow.close();
-            }
-            
+            processInput();
             update(TimePerFrame);
         }
         render();
@@ -57,4 +50,14 @@ void Application::render()
 {
     mWindow.clear();
     mWindow.display();
+}
+
+void Application::processInput()
+{
+    sf::Event event;
+    while (mWindow.pollEvent(event))
+    {
+        if (event.type == sf::Event::Closed)
+            mWindow.close();
+    }
 }
