@@ -15,6 +15,9 @@
 #include "ResourceIdentifiers.hpp"
 #include "ResourcePath.hpp"
 
+//TEMP
+#include <SFML/graphics.hpp>
+
 class Application
 {
 
