@@ -41,6 +41,11 @@ void Application::launch()
     }
 }
 
+void Application::loadResources()
+{
+    
+}
+
 void Application::update(sf::Time deltaTime)
 {
     

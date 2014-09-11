@@ -27,6 +27,7 @@
 /* Begin PBXFileReference section */
 		4F54D78F19AD006400633A4E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
 		4F54D79019AD006400633A4E /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
+		4F95A75C19C128A100BBCAEF /* ResourceIdentifiers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceIdentifiers.hpp; sourceTree = "<group>"; };
 		4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-GameEngine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF00D8F19A58FEF006BF089 /* SFML-GameEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-GameEngine-Info.plist"; sourceTree = "<group>"; };
 		4FF00D9019A58FEF006BF089 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 			children = (
 				4F54D78F19AD006400633A4E /* ResourceManager.cpp */,
 				4F54D79019AD006400633A4E /* ResourceManager.hpp */,
+				4F95A75C19C128A100BBCAEF /* ResourceIdentifiers.hpp */,
 			);
 			name = "Asset Management";
 			sourceTree = "<group>";

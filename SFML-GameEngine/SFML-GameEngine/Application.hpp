@@ -10,6 +10,7 @@
 #define __SFML_GameEngine__Application__
 
 #include <SFML/graphics.hpp>
+#include "ResourceIdentifiers.hpp"
 
 class Application
 {
@@ -25,8 +26,14 @@ private:
     
     void    processInput();
     
+    void    loadResources();
+    
+private:
     static const sf::Time   TimePerFrame;
     sf::RenderWindow    mWindow;
+    
+    //Resource Pools
+    textureManager      mTextures;
 };
 
 #endif /* defined(__SFML_GameEngine__Application__) */
