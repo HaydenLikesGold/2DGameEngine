@@ -12,8 +12,12 @@ const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
 
 Application::Application(int width, int height, std::string windowName)
 :mWindow(sf::VideoMode(width, height), windowName, sf::Style::Close)
+, mTextures()
 {
+    mWindow.setKeyRepeatEnabled(false);
     mWindow.setFramerateLimit(60);
+    
+    loadResources();
     
 }
 
@@ -43,7 +47,7 @@ void Application::launch()
 
 void Application::loadResources()
 {
-    mTextures.load(Textures::Test, "autumn.jpg");
+    mTextures.load(Textures::Test, resourcePath()+"autumn.jpg");
 }
 
 void Application::update(sf::Time deltaTime)

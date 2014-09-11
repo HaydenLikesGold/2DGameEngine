@@ -24,6 +24,8 @@ namespace Textures
         Test
     };
 }
+template <typename Resource, typename Identifier>
+class ResourceManager;
 
 typedef ResourceManager<sf::Texture, Textures::ID> textureManager;
 

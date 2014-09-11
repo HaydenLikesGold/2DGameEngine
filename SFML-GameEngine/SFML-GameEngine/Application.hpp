@@ -10,6 +10,7 @@
 #define __SFML_GameEngine__Application__
 
 #include <SFML/graphics.hpp>
+#include "ResourceManager.hpp"
 #include "ResourceIdentifiers.hpp"
 #include "ResourcePath.hpp"
 
