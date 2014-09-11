@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F54D79119AD006400633A4E /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F54D78F19AD006400633A4E /* ResourceManager.cpp */; };
-		4F95A75E19C12EEF00BBCAEF /* autumn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F95A75D19C12EEF00BBCAEF /* autumn.jpg */; };
+		4F95A76219C1395000BBCAEF /* autumn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F95A76119C1395000BBCAEF /* autumn.png */; };
 		4FF00D9119A58FEF006BF089 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9019A58FEF006BF089 /* ResourcePath.mm */; };
 		4FF00D9419A58FEF006BF089 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00D9319A58FEF006BF089 /* main.cpp */; };
 		4FF00DA519A59179006BF089 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FF00DA319A59179006BF089 /* Application.cpp */; };
@@ -29,7 +29,7 @@
 		4F54D78F19AD006400633A4E /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
 		4F54D79019AD006400633A4E /* ResourceManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ResourceManager.hpp; sourceTree = "<group>"; };
 		4F95A75C19C128A100BBCAEF /* ResourceIdentifiers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceIdentifiers.hpp; sourceTree = "<group>"; };
-		4F95A75D19C12EEF00BBCAEF /* autumn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autumn.jpg; sourceTree = "<group>"; };
+		4F95A76119C1395000BBCAEF /* autumn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autumn.png; sourceTree = "<group>"; };
 		4FF00D8B19A58FEF006BF089 /* SFML-GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SFML-GameEngine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF00D8F19A58FEF006BF089 /* SFML-GameEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SFML-GameEngine-Info.plist"; sourceTree = "<group>"; };
 		4FF00D9019A58FEF006BF089 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		4FF00D9519A58FEF006BF089 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4F95A75D19C12EEF00BBCAEF /* autumn.jpg */,
+				4F95A76119C1395000BBCAEF /* autumn.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F95A75E19C12EEF00BBCAEF /* autumn.jpg in Resources */,
+				4F95A76219C1395000BBCAEF /* autumn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,6 @@
 #ifndef SFML_GameEngine_ResourceIdentifiers_hpp
 #define SFML_GameEngine_ResourceIdentifiers_hpp
 
-#include "ResourceManager.hpp"
 #include <SFML/graphics.hpp>
 
 namespace sf
@@ -24,9 +23,10 @@ namespace Textures
         Test
     };
 }
+
 template <typename Resource, typename Identifier>
 class ResourceManager;
 
-typedef ResourceManager<sf::Texture, Textures::ID> textureManager;
+typedef ResourceManager<sf::Texture, Textures::ID> TextureManager;
 
 #endif

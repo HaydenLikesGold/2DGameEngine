@@ -10,6 +10,7 @@
 #define __SFML_GameEngine__Application__
 
 #include <SFML/graphics.hpp>
+
 #include "ResourceManager.hpp"
 #include "ResourceIdentifiers.hpp"
 #include "ResourcePath.hpp"
@@ -35,7 +36,7 @@ private:
     sf::RenderWindow        mWindow;
     
     //Resource Pools
-    textureManager          mTextures;
+    TextureManager          mTextures;
 };
 
 #endif /* defined(__SFML_GameEngine__Application__) */
