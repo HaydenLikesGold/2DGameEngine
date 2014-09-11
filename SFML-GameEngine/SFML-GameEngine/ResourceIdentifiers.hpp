@@ -10,12 +10,18 @@
 #define SFML_GameEngine_ResourceIdentifiers_hpp
 
 #include "ResourceManager.hpp"
+#include <SFML/graphics.hpp>
+
+namespace sf
+{
+    class Texture;
+}
 
 namespace Textures
 {
     enum ID
     {
-        
+        Test
     };
 }
 

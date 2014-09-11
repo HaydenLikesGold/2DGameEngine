@@ -43,7 +43,7 @@ void Application::launch()
 
 void Application::loadResources()
 {
-    
+    mTextures.load(Textures::Test, "autumn.jpg");
 }
 
 void Application::update(sf::Time deltaTime)

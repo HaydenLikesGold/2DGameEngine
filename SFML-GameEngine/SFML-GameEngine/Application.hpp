@@ -11,6 +11,7 @@
 
 #include <SFML/graphics.hpp>
 #include "ResourceIdentifiers.hpp"
+#include "ResourcePath.hpp"
 
 class Application
 {
@@ -30,10 +31,10 @@ private:
     
 private:
     static const sf::Time   TimePerFrame;
-    sf::RenderWindow    mWindow;
+    sf::RenderWindow        mWindow;
     
     //Resource Pools
-    textureManager      mTextures;
+    textureManager          mTextures;
 };
 
 #endif /* defined(__SFML_GameEngine__Application__) */
