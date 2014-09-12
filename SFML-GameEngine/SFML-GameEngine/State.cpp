@@ -6,4 +6,10 @@
 //  Copyright (c) 2014 HaydenGoldstien. All rights reserved.
 //
 
-#include "State.h"
+#include "State.hpp"
+
+State::Context::Context(sf::RenderWindow& window, TextureManager& textures)
+: window(&window)
+, textures(&textures)
+{
+}

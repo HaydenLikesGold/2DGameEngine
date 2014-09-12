@@ -9,6 +9,15 @@
 #ifndef __SFML_GameEngine__StateStack__
 #define __SFML_GameEngine__StateStack__
 
-#include <iostream>
+#include "State.hpp"
+
+class StateStack : private sf::NonCopyable
+{
+    public:
+        StateStack(State::Context context);
+    
+    private:
+    
+};
 
 #endif /* defined(__SFML_GameEngine__StateStack__) */
