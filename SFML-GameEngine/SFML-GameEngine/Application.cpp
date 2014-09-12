@@ -58,8 +58,7 @@ void Application::update(sf::Time deltaTime)
 void Application::render()
 {
     mWindow.clear();
-    sf::Sprite mSprite = sf::Sprite(mTextures.get(Textures::Test));
-    mWindow.draw(mSprite);
+    //mWindow.draw();
     mWindow.display();
 }
 
