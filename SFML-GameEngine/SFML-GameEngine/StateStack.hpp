@@ -11,10 +11,20 @@
 
 #include "State.hpp"
 
+class State;
+
 class StateStack : private sf::NonCopyable
 {
+    struct Context
+    {
+        Context(sf::RenderWindow& window, TextureManager& textures);
+        
+        sf::RenderWindow*	window;
+        TextureManager*		textures;
+    };
+    
     public:
-        StateStack(State::Context context);
+    StateStack(Context context);
     
     private:
     

@@ -21,16 +21,9 @@ class State
 {
     public:
         typedef std::unique_ptr<State> Ptr;
-        struct Context
-        {
-            Context(sf::RenderWindow& window, TextureManager& textures);
-            
-            sf::RenderWindow*	window;
-            TextureManager*		textures;
-        };
-        
+
     public:
-        State(StateStack& stack, Context context);
+        State(StateStack& stack, sf::Context context);
         ~State();
         
     private:

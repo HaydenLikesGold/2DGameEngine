@@ -8,7 +8,7 @@
 
 #include "State.hpp"
 
-State::Context::Context(sf::RenderWindow& window, TextureManager& textures)
+StateStack::Context::Context(sf::RenderWindow& window, TextureManager& textures)
 : window(&window)
 , textures(&textures)
 {
